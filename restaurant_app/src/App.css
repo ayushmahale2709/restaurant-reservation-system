@@ -1,0 +1,149 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121826;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 950px;
+  background: #1c2333;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.seats-container {
+  text-align: center;
+  padding: 15px;
+  background: #232a3e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.seats-left {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00eaff;
+}
+
+.form-container {
+  background: #232a3e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reservation-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #2d354e;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.reservation-form input:focus {
+  outline: none;
+  background: #394158;
+}
+
+.reserve-btn {
+  background: linear-gradient(135deg, #00eaff, #007bff);
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.reserve-btn:hover {
+  background: linear-gradient(135deg, #00d1e0, #006be6);
+}
+
+.table-container {
+  max-height: 400px; /* Enables scrolling for large tables */
+  overflow-y: auto;
+  background: #232a3e;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reservation-table th, .reservation-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.reservation-table th {
+  background: #2d354e;
+  font-weight: 600;
+  color: #00eaff;
+}
+
+.reservation-table tr:nth-child(even) {
+  background: #2b3248;
+}
+
+.reservation-table tr:hover {
+  background: #3a4261;
+  transition: 0.3s ease-in-out;
+}
+
+.checkout-btn, .delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.checkout-btn {
+  background: linear-gradient(135deg, #34d399, #059669);
+  color: white;
+}
+
+.checkout-btn:hover {
+  background: linear-gradient(135deg, #2ab07f, #047857);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #f87171, #dc2626);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #e63939, #b91c1c);
+}
